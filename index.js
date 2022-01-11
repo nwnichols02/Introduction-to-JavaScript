@@ -33,9 +33,12 @@ Do the following:
    HINT: no function required
 */
 
-
-
-
+let greeting = 'hello';
+let name = 'Nate';
+if(greeting === name){
+  return greeting;
+}
+console.log(greeting);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -47,6 +50,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let num = '1999';
+num = 1999;
+console.log(num); 
 
 
 
