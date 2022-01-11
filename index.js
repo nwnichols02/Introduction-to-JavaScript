@@ -36,9 +36,9 @@ Do the following:
 let greeting = 'hello';
 let name = 'Nate';
 if(greeting === name){
-  return greeting;
+  console.log(greeting);
 }
-console.log(greeting);
+
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -82,8 +82,8 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanAge , dogAge){
+  return humanAge * 7;
 }
 
 
