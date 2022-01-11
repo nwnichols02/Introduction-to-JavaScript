@@ -20,7 +20,7 @@ Do the following:
    HINT: no function required
 */
 const votingAge = 18
-console.log(votingAge);
+//console.log(votingAge);
 
 /*
 Task 1b - Values
@@ -36,7 +36,7 @@ Do the following:
 let greeting = 'hello';
 let name = 'Nate';
 if(greeting === name){
-  console.log(greeting);
+  //console.log(greeting);
 }
 
 
@@ -52,7 +52,7 @@ Do the following:
 */
 let num = '1999';
 num = 1999;
-console.log(num); 
+//console.log(num); 
 
 
 
@@ -82,7 +82,7 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(humanAge , dogAge){
+function dogYears(humanAge){
   return humanAge * 7;
 }
 
@@ -115,28 +115,27 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(dogAge, dogWeight){
-  if(dogAge >=1){
-  if(dogWeight > 15){
+function hungryDog(dogWeight, dogAge){
+  if(dogAge >=1 && dogWeight > 15 && dogWeight >= 11){
   return dogWeight * .02;
-  }else if(dogWeight >=11 && dogWeight <= 15){
+  }else if(dogAge >=1 && dogWeight >=11 && dogWeight <= 15){
   return dogWeight * .03;
-} else if (dogWeight >=6 && dogWeight <=10){
+} else if (dogAge >=1 && dogWeight >=6 && dogWeight <=10){
   return dogWeight * .04;
-} else if (dogWeight >=1 && dogWeight <=5){
+} else if (dogAge >=1 && dogWeight >=1 && dogWeight <=5){
   return dogWeight * .05;
 }
-} else{
+else{
   if(dogAge >=.583 && dogAge <1 ){
     return dogWeight * .04;
-  }else if(dogAge >=.333 && dogAge <=.582 ){
+  }else if(dogAge >=.333 && dogAge <.583 ){
     return dogWeight * .05;
-  }else if(dogAge >=.166 && dogAge <=.332){
+  }else if(dogAge >=.166 && dogAge <.333){
     return dogWeight *.1;
   }
 }
 } 
-console.log(hungryDog(1,15));
+console.log(hungryDog(15,1));
 
 
 
