@@ -19,8 +19,8 @@ Do the following:
 
    HINT: no function required
 */
-
-
+const votingAge = 18
+console.log(votingAge);
 
 /*
 Task 1b - Values
