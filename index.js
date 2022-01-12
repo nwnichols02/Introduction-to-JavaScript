@@ -262,19 +262,19 @@ Using the grade function below do the following:
 */
 
  function grade(score){
-   if(score >=90 && score <=100){
+   if(score >=90){
      return 'you got an A'; 
-   }else if(score >=80 && score <=89){
+   }else if(score <90 && score >=80){
     return 'you got a B';
-  } else if(score >=70 && score <=79){
+  } else if(score <80 && score >=70){
     return 'you got a C';
-  } else if(score >=60 && score <=69){
+  } else if(score <70 && score >=60){
     return 'you got a D';
   } else if(score <60){
     return 'you got an F';
   }
 }
-
+console.log(grade(70))
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
